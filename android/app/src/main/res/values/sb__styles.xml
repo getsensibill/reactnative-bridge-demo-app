@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="New.Theme.Sensibill.CaptureStandalone" parent="Base.New.Theme.Sensibill.CaptureStandalone">
+    <!-- Font -->
+    <item name="fontFamily">@font/genos_family</item>
+    <item name="android:fontFamily">@font/genos_family</item>
+
+    <!-- Capture Theme -->
+    <item name="sb__colourCaptureBackground">#331111</item>
+    <item name="sb__colourOnCaptureBackground">#AFDEDE</item>
+    <item name="sb__colourOnCaptureBackgroundDisabled">#D4E2E2</item>
+
+    <!-- Main SDK Theme -->
+    <item name="sb__colourPrimary">#8B3B60</item>
+    <item name="sb__colourOnPrimary">#FFFFFF</item>
+    <item name="sb__colourPrimaryVariant">#53283C</item>
+    <item name="sb__colourSecondary">#3B8B66</item>
+    <item name="sb__colourOnSecondary">#FFFFFF</item>
+    <item name="sb__colourSurface">#FFE9B6</item>
+    <item name="sb__colourOnSurface">#513F16</item>
+  </style>
+</resources>
