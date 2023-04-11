@@ -37,8 +37,8 @@ allprojects {
         maven {
             url 'https://maven.getsensibill.com'
             credentials {
-                username 'sensibill'
-                password 'MKdoXrtoMpLfetkaHqWzYCHaca3g2tq1'
+                username 'TO_BE_PROVIDED_BY_SENSIBILL'
+                password 'TO_BE_PROVIDED_BY_SENSIBILL'
             }
         }
     }

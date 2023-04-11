@@ -12,8 +12,27 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		17F53338188A42658D18D154 /* Genos-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 510DB3AFD4484797BFCFD279 /* Genos-ExtraLight.ttf */; };
+		211FDD37AAAC445A8D33DA57 /* Genos-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B5D985C9F1834C21AFFD23BE /* Genos-Thin.ttf */; };
+		3DB471EEC7EB41149B666A73 /* Genos-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 38A49BB055FC4328A2584F49 /* Genos-Italic.ttf */; };
+		70E32ADECB6B4A579AC8B6A5 /* Genos-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3274472E6AB344A5BE8DD039 /* Genos-SemiBold.ttf */; };
+		7677F3303C74471892348192 /* Genos-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 448408A72CDC45D7B8550D0B /* Genos-ThinItalic.ttf */; };
+		7697B3CC589A4E08A7110E3E /* Genos-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C15D2E1719584B3A9D6813D3 /* Genos-MediumItalic.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.a */; };
+		801BB6FCF45344BA9607FE2D /* Genos-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50852D92328A40D98B4F3887 /* Genos-BlackItalic.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		86A6453B046446E68E2FE4FB /* Genos-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FB3D5C634BC41438BE239F8 /* Genos-ExtraBoldItalic.ttf */; };
+		91477CD7F0F7455887EE51CD /* Genos-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2671C5659D2B4A938A31F784 /* Genos-Bold.ttf */; };
+		916349F2A1B5418E9296E0AD /* Genos-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7622A183227545759D064993 /* Genos-Medium.ttf */; };
+		96D81DD9DAC2433DAAC7DE34 /* Genos-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21ACACED62B542EB9DAAAA78 /* Genos-BoldItalic.ttf */; };
+		9AFD16C681E84840AA6D1A3B /* Genos-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53588ED587B14DCFB4527AD0 /* Genos-LightItalic.ttf */; };
+		A2E2F33829DB60C800404865 /* SensibillStrings.bundle in CopyFiles */ = {isa = PBXBuildFile; fileRef = A2E2F33729DB5FE200404865 /* SensibillStrings.bundle */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B69C7F7F29C2479791B74DD0 /* Genos-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8F002A14AAF41A182C1ACCD /* Genos-ExtraLightItalic.ttf */; };
+		B9F2D8A71B39455EB53C4953 /* Genos-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB482D1F34FA485EB4ABA6A3 /* Genos-Light.ttf */; };
+		CCA325C73788415EB4D1EA3C /* Genos-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1CE661B0EA614290990E019F /* Genos-SemiBoldItalic.ttf */; };
+		D3DCC4FD75DF452785354C99 /* Genos-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 20AC34252D964BEFBD0EC0E5 /* Genos-ExtraBold.ttf */; };
+		E95FB16D500E4247B08D181A /* Genos-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B908654461F642E98D14A37B /* Genos-Black.ttf */; };
+		EAE79514CFB449DAA9A8C828 /* Genos-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6832B9BC1E2246D1BFAC7E90 /* Genos-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +45,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A2E2F33529DB4C4E00404865 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A2E2F33829DB60C800404865 /* SensibillStrings.bundle in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* ReactnativeBridgeDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactnativeBridgeDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -37,12 +69,31 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ReactnativeBridgeDemoApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ReactnativeBridgeDemoApp/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE661B0EA614290990E019F /* Genos-SemiBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-SemiBoldItalic.ttf"; path = "../assets/fonts/Genos-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		20AC34252D964BEFBD0EC0E5 /* Genos-ExtraBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-ExtraBold.ttf"; path = "../assets/fonts/Genos-ExtraBold.ttf"; sourceTree = "<group>"; };
+		21ACACED62B542EB9DAAAA78 /* Genos-BoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-BoldItalic.ttf"; path = "../assets/fonts/Genos-BoldItalic.ttf"; sourceTree = "<group>"; };
+		2671C5659D2B4A938A31F784 /* Genos-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Bold.ttf"; path = "../assets/fonts/Genos-Bold.ttf"; sourceTree = "<group>"; };
+		3274472E6AB344A5BE8DD039 /* Genos-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-SemiBold.ttf"; path = "../assets/fonts/Genos-SemiBold.ttf"; sourceTree = "<group>"; };
+		38A49BB055FC4328A2584F49 /* Genos-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Italic.ttf"; path = "../assets/fonts/Genos-Italic.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ReactnativeBridgeDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactnativeBridgeDemoApp.debug.xcconfig"; path = "Target Support Files/Pods-ReactnativeBridgeDemoApp/Pods-ReactnativeBridgeDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		448408A72CDC45D7B8550D0B /* Genos-ThinItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-ThinItalic.ttf"; path = "../assets/fonts/Genos-ThinItalic.ttf"; sourceTree = "<group>"; };
+		50852D92328A40D98B4F3887 /* Genos-BlackItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-BlackItalic.ttf"; path = "../assets/fonts/Genos-BlackItalic.ttf"; sourceTree = "<group>"; };
+		510DB3AFD4484797BFCFD279 /* Genos-ExtraLight.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-ExtraLight.ttf"; path = "../assets/fonts/Genos-ExtraLight.ttf"; sourceTree = "<group>"; };
+		53588ED587B14DCFB4527AD0 /* Genos-LightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-LightItalic.ttf"; path = "../assets/fonts/Genos-LightItalic.ttf"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ReactnativeBridgeDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactnativeBridgeDemoApp.release.xcconfig"; path = "Target Support Files/Pods-ReactnativeBridgeDemoApp/Pods-ReactnativeBridgeDemoApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests/Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-ReactnativeBridgeDemoApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReactnativeBridgeDemoApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6832B9BC1E2246D1BFAC7E90 /* Genos-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Regular.ttf"; path = "../assets/fonts/Genos-Regular.ttf"; sourceTree = "<group>"; };
+		7622A183227545759D064993 /* Genos-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Medium.ttf"; path = "../assets/fonts/Genos-Medium.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReactnativeBridgeDemoApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.release.xcconfig"; path = "Target Support Files/Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests/Pods-ReactnativeBridgeDemoApp-ReactnativeBridgeDemoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		9FB3D5C634BC41438BE239F8 /* Genos-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-ExtraBoldItalic.ttf"; path = "../assets/fonts/Genos-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		A2E2F33729DB5FE200404865 /* SensibillStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SensibillStrings.bundle; sourceTree = "<group>"; };
+		A8F002A14AAF41A182C1ACCD /* Genos-ExtraLightItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-ExtraLightItalic.ttf"; path = "../assets/fonts/Genos-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		B5D985C9F1834C21AFFD23BE /* Genos-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Thin.ttf"; path = "../assets/fonts/Genos-Thin.ttf"; sourceTree = "<group>"; };
+		B908654461F642E98D14A37B /* Genos-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Black.ttf"; path = "../assets/fonts/Genos-Black.ttf"; sourceTree = "<group>"; };
+		C15D2E1719584B3A9D6813D3 /* Genos-MediumItalic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-MediumItalic.ttf"; path = "../assets/fonts/Genos-MediumItalic.ttf"; sourceTree = "<group>"; };
+		DB482D1F34FA485EB4ABA6A3 /* Genos-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Genos-Light.ttf"; path = "../assets/fonts/Genos-Light.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -106,6 +157,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3CA449603FC34B36BD5969D3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B908654461F642E98D14A37B /* Genos-Black.ttf */,
+				50852D92328A40D98B4F3887 /* Genos-BlackItalic.ttf */,
+				2671C5659D2B4A938A31F784 /* Genos-Bold.ttf */,
+				21ACACED62B542EB9DAAAA78 /* Genos-BoldItalic.ttf */,
+				20AC34252D964BEFBD0EC0E5 /* Genos-ExtraBold.ttf */,
+				9FB3D5C634BC41438BE239F8 /* Genos-ExtraBoldItalic.ttf */,
+				510DB3AFD4484797BFCFD279 /* Genos-ExtraLight.ttf */,
+				A8F002A14AAF41A182C1ACCD /* Genos-ExtraLightItalic.ttf */,
+				38A49BB055FC4328A2584F49 /* Genos-Italic.ttf */,
+				DB482D1F34FA485EB4ABA6A3 /* Genos-Light.ttf */,
+				53588ED587B14DCFB4527AD0 /* Genos-LightItalic.ttf */,
+				7622A183227545759D064993 /* Genos-Medium.ttf */,
+				C15D2E1719584B3A9D6813D3 /* Genos-MediumItalic.ttf */,
+				6832B9BC1E2246D1BFAC7E90 /* Genos-Regular.ttf */,
+				3274472E6AB344A5BE8DD039 /* Genos-SemiBold.ttf */,
+				1CE661B0EA614290990E019F /* Genos-SemiBoldItalic.ttf */,
+				B5D985C9F1834C21AFFD23BE /* Genos-Thin.ttf */,
+				448408A72CDC45D7B8550D0B /* Genos-ThinItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,12 +192,14 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				A2E2F33729DB5FE200404865 /* SensibillStrings.bundle */,
 				13B07FAE1A68108700A75B9A /* ReactnativeBridgeDemoApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactnativeBridgeDemoAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				3CA449603FC34B36BD5969D3 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -181,6 +259,7 @@
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
+				A2E2F33529DB4C4E00404865 /* CopyFiles */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
@@ -244,6 +323,24 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				E95FB16D500E4247B08D181A /* Genos-Black.ttf in Resources */,
+				801BB6FCF45344BA9607FE2D /* Genos-BlackItalic.ttf in Resources */,
+				91477CD7F0F7455887EE51CD /* Genos-Bold.ttf in Resources */,
+				96D81DD9DAC2433DAAC7DE34 /* Genos-BoldItalic.ttf in Resources */,
+				D3DCC4FD75DF452785354C99 /* Genos-ExtraBold.ttf in Resources */,
+				86A6453B046446E68E2FE4FB /* Genos-ExtraBoldItalic.ttf in Resources */,
+				17F53338188A42658D18D154 /* Genos-ExtraLight.ttf in Resources */,
+				B69C7F7F29C2479791B74DD0 /* Genos-ExtraLightItalic.ttf in Resources */,
+				3DB471EEC7EB41149B666A73 /* Genos-Italic.ttf in Resources */,
+				B9F2D8A71B39455EB53C4953 /* Genos-Light.ttf in Resources */,
+				9AFD16C681E84840AA6D1A3B /* Genos-LightItalic.ttf in Resources */,
+				916349F2A1B5418E9296E0AD /* Genos-Medium.ttf in Resources */,
+				7697B3CC589A4E08A7110E3E /* Genos-MediumItalic.ttf in Resources */,
+				EAE79514CFB449DAA9A8C828 /* Genos-Regular.ttf in Resources */,
+				70E32ADECB6B4A579AC8B6A5 /* Genos-SemiBold.ttf in Resources */,
+				CCA325C73788415EB4D1EA3C /* Genos-SemiBoldItalic.ttf in Resources */,
+				211FDD37AAAC445A8D33DA57 /* Genos-Thin.ttf in Resources */,
+				7677F3303C74471892348192 /* Genos-ThinItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

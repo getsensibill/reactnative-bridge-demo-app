@@ -55,5 +55,26 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Genos-Black.ttf</string>
+		<string>Genos-BlackItalic.ttf</string>
+		<string>Genos-Bold.ttf</string>
+		<string>Genos-BoldItalic.ttf</string>
+		<string>Genos-ExtraBold.ttf</string>
+		<string>Genos-ExtraBoldItalic.ttf</string>
+		<string>Genos-ExtraLight.ttf</string>
+		<string>Genos-ExtraLightItalic.ttf</string>
+		<string>Genos-Italic.ttf</string>
+		<string>Genos-Light.ttf</string>
+		<string>Genos-LightItalic.ttf</string>
+		<string>Genos-Medium.ttf</string>
+		<string>Genos-MediumItalic.ttf</string>
+		<string>Genos-Regular.ttf</string>
+		<string>Genos-SemiBold.ttf</string>
+		<string>Genos-SemiBoldItalic.ttf</string>
+		<string>Genos-Thin.ttf</string>
+		<string>Genos-ThinItalic.ttf</string>
+	</array>
 </dict>
 </plist>

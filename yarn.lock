@@ -1651,10 +1651,10 @@
   resolved "https://registry.yarnpkg.com/@react-native/polyfills/-/polyfills-2.0.0.tgz#4c40b74655c83982c8cf47530ee7dc13d957b6aa"
   integrity sha512-K0aGNn1TjalKj+65D7ycc1//H9roAQ51GJVk5ZJQFb2teECGmzd86bYDC0aYdbRf7gtovescq4Zt6FR0tgXiHQ==
 
-"@sensibill/reactnative-bridge-sdk@2022.0.0":
-  version "2022.0.0"
-  resolved "https://npm.pkg.github.com/download/@sensibill/reactnative-bridge-sdk/2022.0.0/d3e4843ce63b62532fbe19f9c7fead1ba6ded32a#d3e4843ce63b62532fbe19f9c7fead1ba6ded32a"
-  integrity sha512-DjS/LT8orZ3PXHNyIpEYbjbHY3lLrBncsW7Sp8GHaYX2A2+lUkWlCD7Q/GPDkkQb/SP4ELACbdKSkS/A8K4uxg==
+"@sensibill/reactnative-bridge-sdk@2023.0.0":
+  version "2023.0.0"
+  resolved "https://npm.pkg.github.com/download/@sensibill/reactnative-bridge-sdk/2023.0.0/abbbeae801f001b01225c764568a0ad11737a6ee#abbbeae801f001b01225c764568a0ad11737a6ee"
+  integrity sha512-5XPOiyMqPNiKim6t407S14vyDE/YuoQO9WwK7ZzkGb4HhRV8wQ8yXVfRBJGV8aVNzijRFZHaUujlqu2bVqXKyQ==
 
 "@sideway/address@^4.1.3":
   version "4.1.4"
