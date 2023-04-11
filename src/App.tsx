@@ -15,7 +15,7 @@ import {
 import {Colors} from 'react-native/Libraries/NewAppScreen';
 import {requestLocationPermissions} from './PermissionHandling';
 import {extractImageData, ImageData} from './ImageHandling';
-import {SensibillCaptureStandalone} from '@sensibill/reactnative-bridge-sdk';
+import {SbCaptureError, SensibillCaptureStandalone} from '@sensibill/reactnative-bridge-sdk';
 import {captureConfiguration} from './SbCaptureConfiguration';
 import {unlink} from 'react-native-fs';
 
@@ -77,7 +77,12 @@ function App(): JSX.Element {
         await SensibillCaptureStandalone.captureDocuments(captureConfiguration);
       onDocumentsCaptured(capturedDocuments);
     } catch (e) {
-      console.log(e);
+      console.log(JSON.stringify(e, undefined, 2));
+
+      // The error can be parsed to determine the exact error code and message
+      const wrapped = e as SbCaptureError;
+      console.log(`Capture error code: ${wrapped.code}`);
+      console.log(`Capture error message: ${wrapped.message}`);
     }
   };
 
