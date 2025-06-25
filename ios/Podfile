@@ -5,7 +5,10 @@ require Pod::Executable.execute_command('node', ['-p',
     {paths: [process.argv[1]]},
   )', __dir__]).strip
 
-platform :ios, min_ios_version_supported
+min_ios_versions_supported = ['16.0', min_ios_version_supported]
+index_of_max = min_ios_versions_supported.each_with_index.max_by { |number, _| number.to_f }[1]
+platform :ios, min_ios_versions_supported[index_of_max]
+
 prepare_react_native_project!
 
 linkage = ENV['USE_FRAMEWORKS']
@@ -15,14 +18,14 @@ if linkage != nil
 end
 
 def sensibill_sdk
-  pod 'Sensibill', :git => 'git@github.com:getsensibill/sdk-ios.git', :tag => 'v2023.0.1'
+  pod 'Sensibill', :git => 'git@github.com:getsensibill/sdk-ios.git', :tag => 'v2025.0.1'
 end
 
 target 'ReactnativeBridgeDemoApp' do
   
-  sensibill_sdk
-
   config = use_native_modules!
+
+  sensibill_sdk
 
   use_react_native!(
     :path => config[:reactNativePath],    
