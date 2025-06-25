@@ -1,38 +1,57 @@
-import {readFile} from 'react-native-fs';
-import * as Exif from 'react-native-exif';
+import { readFile } from 'react-native-fs';
+import * as Exif from '@lodev09/react-native-exify';
 
-/** Interface defining the data returned by `Exif.getExif()` */
 export interface ExifData {
   imageWidth?: number;
   imageHeight?: number;
   orientation?: number;
-  originalUri?: string;
-  fullExif?: any;
+  make?: string;
+  model?: string;
 }
 
-/** Interface defining the datapoints we want to track for a captured image */
+export interface LatLong {
+  latitude?: number;
+  longitude?: number;
+}
+
 export interface ImageData {
   imagePath: string;
   base64: string;
   exifData?: any;
-  latLong?: Exif.LatLong;
+  latLong?: LatLong;
+  sdkMetadata?: string;
 }
 
-/** Given an image filepath on the device, extract and return all `ImageData` properties */
 export const extractImageData = async (path: string): Promise<ImageData> => {
-  const rawExifData = await Exif.getExif(path);
+  const base64 = await readFile(path, 'base64');
+
+  const rawExifData = await Exif.readAsync(`file://${path}`);
+  if (rawExifData === undefined) {
+    return {
+      imagePath: path,
+      base64: base64,
+    };
+  }
+
   const exifData = {
     imageWidth: rawExifData.ImageWidth,
-    imageHeight: rawExifData.ImageHeight,
+    imageHeight: rawExifData.ImageLength,
     orientation: rawExifData.Orientation,
-    originalUri: rawExifData.originalUri,
-    fullExif: rawExifData.exif,
+    make: rawExifData.Make,
+    model: rawExifData.Model,
+  };
+
+  const latLong = {
+    latitude: rawExifData.GPSLatitude,
+    longitude: rawExifData.GPSLongitude,
   };
 
   return {
     imagePath: path,
-    base64: await readFile(path, 'base64'),
+    base64: base64,
     exifData: exifData,
-    latLong: await Exif.getLatLong(path),
+    latLong: latLong,
+    // SDK may publish additional metadata in UserComment
+    sdkMetadata: rawExifData.UserComment,
   };
 };
