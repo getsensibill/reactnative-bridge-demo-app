@@ -172,24 +172,25 @@ function App(): JSX.Element {
                 return <Text>Failed to load image</Text>;
               }
 
-              const image = data.base64;
-              const latLong = data.latLong;
-              const imageWidth = data.exifData?.imageWidth;
-              const imageHeight = data.exifData?.imageHeight;
+              const { base64: image, exifData, latLong, sdkMetadata } = data;
+              const { imageWidth, imageHeight } = data.exifData;
+
+              const targetWidth = 150;
+              const defaultHeight = 250;
+
+              const actualWidth = imageWidth ?? targetWidth;
+              const actualHeight = imageHeight ?? defaultHeight;
+              const factor = targetWidth / actualWidth;
+
+              const width = actualWidth * factor;
+              const height = actualHeight * factor;
+              
 
               const imageViewSize = (() => {
-                if (imageWidth && imageHeight) {
-                  const aspectRatio = imageWidth / imageHeight;
-                  return {
-                    height: aspectRatio > 1 ? 150 / aspectRatio : 150,
-                    width: aspectRatio > 1 ? 150 : 150 * aspectRatio,
-                  };
-                } else {
-                  return {
-                    height: 150,
-                    width: 150,
-                  };
-                }
+                return {
+                  height: height,
+                  width: width,
+                };
               })();
 
               return (
@@ -203,11 +204,15 @@ function App(): JSX.Element {
                     />
                     <View>
                       <Text style={styles.bold}>Exif Data:</Text>
+                      <Text>Width: {`${imageWidth}`}</Text>
+                      <Text>Height: {`${imageHeight}`}</Text>
+                      <Text>Make: {`${exifData?.make}`}</Text>
+                      <Text>Model: {`${exifData?.model}`}</Text>
+                      <Text style={styles.bold}>GPS Data:</Text>
                       <Text>Lat: {`${latLong?.latitude}`}</Text>
                       <Text>Long: {`${latLong?.longitude}`}</Text>
-                      <Text>Model: {`${data.exifData?.fullExif?.Model}`}</Text>
-                      <Text>Width: {`${data.exifData?.imageWidth}`}</Text>
-                      <Text>Height: {`${data.exifData?.imageHeight}`}</Text>
+                      <Text style={styles.bold}>SDK Metadata:</Text>
+                      <Text>{`${sdkMetadata}`}</Text>
                     </View>
                   </View>
                   <View style={heightSpacerStyle(12)} />

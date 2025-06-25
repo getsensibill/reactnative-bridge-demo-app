@@ -22,7 +22,7 @@ export const captureConfiguration: SbCaptureConfiguration = {
       onPrimary: 0xffffff,
       secondary: 0x3b8b66,
       onSecondary: 0xffffff,
-      focus: 0xbd648d,
+      onSurfaceFocus: 0xbd648d,
       captureBackground: 0x201000,
     },
     iosBundles: {
