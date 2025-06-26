@@ -2,25 +2,29 @@
 
 buildscript {
     ext {
-        buildToolsVersion = "33.0.0"
-        minSdkVersion = 24
-        compileSdkVersion = 33
-        targetSdkVersion = 33
-
-        kotlin_version = "1.8.10"
-
-        // We use NDK 23 which has both M1 support and is the side-by-side NDK version from AGP.
-        ndkVersion = "23.1.7779620"
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 26
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        ndkVersion = "27.1.12297006"
+        kotlin_version = "2.0.21"
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle:7.3.1")
+        classpath("com.android.tools.build:gradle")
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
     }
+}
+
+apply plugin: "com.facebook.react.rootproject"
+
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').canRead()) {
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
 }
 
 allprojects {
@@ -35,10 +39,10 @@ allprojects {
         google()
         mavenCentral()
         maven {
-            url 'https://maven.getsensibill.com'
+            url 'https://maven.pkg.github.com/getsensibill/sdk-android'
             credentials {
-                username 'TO_BE_PROVIDED_BY_SENSIBILL'
-                password 'TO_BE_PROVIDED_BY_SENSIBILL'
+                username properties.getProperty('SbMavenUsername', '"N/A"')
+                password properties.getProperty('SbMavenPassword', '"N/A"')
             }
         }
     }
