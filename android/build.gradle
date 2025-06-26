@@ -22,6 +22,11 @@ buildscript {
 
 apply plugin: "com.facebook.react.rootproject"
 
+Properties properties = new Properties()
+if (project.rootProject.file('local.properties').canRead()) {
+    properties.load(project.rootProject.file("local.properties").newDataInputStream())
+}
+
 allprojects {
     configurations.all {
         resolutionStrategy {
@@ -34,10 +39,10 @@ allprojects {
         google()
         mavenCentral()
         maven {
-            url 'https://maven.getsensibill.com'
+            url 'https://maven.pkg.github.com/getsensibill/sdk-android'
             credentials {
-                username 'TO_BE_PROVIDED_BY_SENSIBILL'
-                password 'TO_BE_PROVIDED_BY_SENSIBILL'
+                username properties.getProperty('SbMavenUsername', '"N/A"')
+                password properties.getProperty('SbMavenPassword', '"N/A"')
             }
         }
     }
